@@ -87,15 +87,4 @@ Ensure you have the following installed:
 
 ---
 
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-
 ![Application archtiture](https://github.com/dev-danish-javed/docker-demo-app/blob/main/app%20architecture.png?raw=true)
