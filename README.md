@@ -32,6 +32,8 @@ A shared Docker volume (`school-app-data`) ensures data persistence across conta
    - Combines the data and calculates the total fee.
 3. **students-ms** handles read and write operations for `students.json`.
 
+![Application archtiture](https://github.com/dev-danish-javed/docker-demo-app/blob/main/app%20architecture.png?raw=true)
+
 ---
 
 ## Docker Compose Configuration
@@ -84,7 +86,3 @@ Ensure you have the following installed:
    - **Accounts-MS**: [http://localhost:8080](http://localhost:8080)
    - **Students-MS**: [http://localhost:8181](http://localhost:8181)
 5. Interact with the app using API endpoints or a UI client like Postman.
-
----
-
-![Application archtiture](https://github.com/dev-danish-javed/docker-demo-app/blob/main/app%20architecture.png?raw=true)
