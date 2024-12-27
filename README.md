@@ -72,11 +72,11 @@ Ensure you have the following installed:
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-repo-url.git
+   git clone [https://github.com/your-repo-url.git](https://github.com/dev-danish-javed/docker-demo-app/)
    ```
 2. Navigate to the project directory:
    ```bash
-   cd school-app
+   cd docker-demo-app
    ```
 3. Build and start the services using Docker Compose:
    ```bash
