@@ -86,3 +86,4 @@ Ensure you have the following installed:
    - **Accounts-MS**: [http://localhost:8080](http://localhost:8080)
    - **Students-MS**: [http://localhost:8181](http://localhost:8181)
 5. Interact with the app using API endpoints or a UI client like Postman.
+6. **Find the postman collection attached**
