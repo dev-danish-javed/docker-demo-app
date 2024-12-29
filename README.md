@@ -78,12 +78,13 @@ Ensure you have the following installed:
    ```bash
    cd docker-demo-app
    ```
-3. Build and start the services using Docker Compose:
+3. Naviagte to the same in ubuntu terminal
+4. Build and start the services using Docker Compose:
    ```bash
-   docker-compose up --build
+   docker compose up --build
    ```
-4. Verify the services are running:
+5. Verify the services are running:
    - **Accounts-MS**: [http://localhost:8080](http://localhost:8080)
    - **Students-MS**: [http://localhost:8181](http://localhost:8181)
-5. Interact with the app using API endpoints or a UI client like Postman.
-6. **Find the postman collection attached**
+6. Interact with the app using API endpoints or a UI client like Postman.
+7. **Find the postman collection attached**
