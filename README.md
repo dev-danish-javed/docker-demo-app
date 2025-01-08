@@ -39,9 +39,9 @@
 - dockerhub, harbor, aws ecr
 - [dron aws push, SIT build logs-registry.paymentus.io]
 > - `docker login`
-> - `docker logout`
-> - `docker push`
+> - `docker push repo:tag`
 > - `docker pull repo:tag`
+> - `docker logout`
 
 ## Containers
 - The functional unit
@@ -168,3 +168,6 @@ services:
   - nick names for images
   - one image can have multiple tags **but not vice-versa**
   - `docker tag new-repo:new-tag old-repo:old-tag`
+
+##### Now we can get our hands dirty and play around with the code attached in docker environment. 
+##### checkout the app structure here [app-details.md](https://github.com/dev-danish-javed/docker-demo-app/blob/main/app-details.md)
