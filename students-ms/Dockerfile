@@ -1,5 +1,5 @@
 # Bring base image
-FROM node:20
+FROM node:20-alpine
 
 # Set work directory
 WORKDIR /app/school-app/students-ms

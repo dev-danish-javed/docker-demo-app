@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MarkdownSettings">
+    <option name="customStylesheetText" value="@font-face {&#10;    font-family: 'ubuntu';&#10;    src: url('D:/webstorm resources/fonts/Ubuntu/Ubuntu-Regular.ttf') format('ttf')&#10;    font-weight: normal;&#10;    font-style: normal;&#10;}&#10;&#10;@font-face {&#10;    font-family: 'popins';&#10;    src: url('D:/webstorm resources/fonts/Poppins/Poppins-Regular.ttf') format('ttf')&#10;    font-weight: normal;&#10;    font-style: normal;&#10;}&#10;&#10;@font-face {&#10;    font-family: 'open-sans';&#10;    src: url('D:/webstorm resources/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format('ttf')&#10;    font-weight: normal;&#10;    font-style: normal;&#10;}&#10;&#10;h1,h2,h3,h4,h5,h6 {&#10;    color: #d2d2d4;&#10;    font-family: 'ubuntu', sans-serif;&#10;}&#10;&#10;body{&#10;background: transparent;&#10;background-color: transparent;&#10;font-family: 'open-sans', sans-serif;&#10;}&#10;" />
+    <option name="useCustomStylesheetText" value="true" />
+  </component>
+</project>

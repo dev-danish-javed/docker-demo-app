@@ -13,8 +13,8 @@ services:
       - STUDENTS_MS_URL=http://students-ms:8181
     networks:
       - school-app
-#    depends_on:
-#      - students-ms
+    depends_on:
+      - students-ms
 
   students-ms:
     image: students-ms:v1
@@ -23,6 +23,8 @@ services:
     build:
       context: ./students-ms
       pull: false
+    env_file:
+      - students-ms/${mode:-dev}.env
     ports:
       - "8181:8181"
     volumes:

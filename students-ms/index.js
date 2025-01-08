@@ -65,13 +65,18 @@ app.get("/class/:className", (req, res) => {
 app.post("/student/add", (req, res) => {
     const studentData = req.body;
     logger.info(`Adding student details ${JSON.stringify(studentData)}`);
-    // add the fees to existing fees array
+    // add the fees to an existing fees array
     let existingStudentsDetails = getStudentsData();
     existingStudentsDetails.push(studentData);
 
     // write the updates in the file
     saveClassDetails(existingStudentsDetails);
     res.status(201).json(studentData);
+})
+
+app.get('/env/:field', (req, res) => {
+    let value = process.env[req.params.field];
+    res.status(value ? 200 : 404).send(value || 'Not Found');
 })
 
 app.listen(appPort, () => {

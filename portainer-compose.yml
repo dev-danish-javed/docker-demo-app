@@ -1,0 +1,15 @@
+services:
+  portainer:
+    image: portainer/portainer-ce:2.21.5
+    container_name: portainer
+    restart: always
+    ports:
+      - "8000:8000"  # Agent communication (optional)
+      - "9443:9443"  # HTTPS UI access
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock  # Access to Docker daemon
+      - portainer_data:/data  # Persistent storage for Portainer
+
+volumes:
+  portainer_data:
+    driver: local
