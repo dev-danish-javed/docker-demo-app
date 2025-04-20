@@ -1,0 +1,7 @@
+. {
+  hosts {
+    10.5.0.10 accounts.abc.com
+    fallthrough
+  }
+  forward . 8.8.8.8
+}

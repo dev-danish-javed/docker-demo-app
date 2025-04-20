@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+  accounts-ms:
+    build:
+      context: ./accounts-ms
+    container_name: accounts-ms
+    expose:
+      - "80"
+    networks:
+      abc-net:
+        ipv4_address: 10.5.0.10
+
+  employee-ms:
+    build:
+      context: ./employee-ms
+    container_name: employee-ms
+    depends_on:
+      - accounts-ms
+      - coredns
+    dns:
+      - 10.5.0.53
+    ports:
+      - "8081:8081"
+    networks:
+      abc-net:
+        ipv4_address: 10.5.0.11
+
+  coredns:
+    image: coredns/coredns:latest
+    container_name: core-dns
+    command: -conf /etc/coredns/Corefile
+    volumes:
+      - ./Corefile:/etc/coredns/Corefile
+    ports:
+      - "1053:53/udp"
+    networks:
+      abc-net:
+        ipv4_address: 10.5.0.53
+
+networks:
+  abc-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/24
